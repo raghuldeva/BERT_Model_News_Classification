@@ -1,6 +1,8 @@
 BERT Model News Classification and Summarization
 This project utilizes the BERT (Bidirectional Encoder Representations from Transformers) model for news classification and summarization. The project is built using a neural network and implemented using the Flask framework.
 
+![sc1](https://github.com/raghuldeva/BERT_Model_News_Classification/assets/72026069/ea6c90c3-c8d5-46a7-9d7f-6f271ec56f3a)
+
 Features
 News Classification: The BERT model classifies news articles into five categories: business, entertainment, sports, politics, and technology. By leveraging the power of deep learning, the model accurately predicts the category to which a news article belongs.
 
