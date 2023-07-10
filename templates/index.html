@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel = "stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+    <div class="container"> 
+        <div class="jumbotron jumbotron-fluid bg-dark text-light">
+            <div class="container">
+              <h1 class="display-7"> BERT Model <br> News classification and Summarization</h1>
+              <!-- <p class="lead">Retrieves the classification of given news article/statement</p> -->
+            </div>
+        </div>
+        <form action="/classify" method="POST">
+            <textarea name="rawtext" class="form-control" rows="10" placeholder="Enter your raw text"></textarea>
+            <!-- <button class="btn btn-primary" type="submit" formaction="/classify">Classify News</button><button class="btn btn-primary" type="submit" formaction="/summarize">Summarize News</button> -->
+            <div class="button-container">
+                <button class="button-43"  type="submit" formaction="/classify">Classify News</button>
+                <button class="button-44"  type="submit" formaction="/summarize">Summarize News</button>
+            </div>
+            <!-- <button class="btn btn-primary" type="submit" formaction="/word_cloud">Generate Wordcloud</button> -->
+        </form>
+        
+        <!-- <button class="btn btn-primary" type="submit" formaction="/classify">Classify News</button> -->
+        
+        <br> <br>
+        <form method="POST" action="/extract">
+            <label for="from_date">From date:</label>
+            <input type="date" id="from_date" name="from_date">
+          
+            <label for="to_date">To date:</label>
+            <input type="date" id="to_date" name="to_date">
+    
+            <label for="option1">sports</label>
+            <input type="checkbox" id="option1" name="checkbox1" value="sports">
+    
+            <label for="option2">politics</label>
+            <input type="checkbox" id="option2" name="checkbox2" value="politics">
+    
+            <label for="option3">entertainment</label>
+            <input type="checkbox" id="option3" name="checkbox3" value="entertainment">
+    
+            <label for="option4">technology</label>
+            <input type="checkbox" id="option4" name="checkbox4" value="technology">
+    
+            <label for="option5">business</label>
+            <input type="checkbox" id="option5" name="checkbox5" value="business">
+          
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+

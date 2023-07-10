@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>{{from_date}}</p>
+    <p>{{to_date}}</p>
+    <p>{{options}}</p> -->
+    <!-- <h1><center>Summarized {{category}} news</center></h1>
+    <p>{{summary}}</p> -->
+    <!-- <p>{{return_requests}}</p> -->0
+    <ul>
+        {% for item in return_requests %}
+            {%set temp = item.split(':-')%}
+            <h1><center><b><i><span style =text-transform:uppercase>{{temp[0]}} NEWS</span></i></b></center></h1>
+            <center><p style="text-align: justify;text-justify:inter-word">{{temp[1]}}</p></center>
+            <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
